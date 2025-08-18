@@ -11,9 +11,19 @@ body {
     overflow-x: hidden;
 }
 
+.forSale {
+    background-color: var(--dark-color);
+    color: #f8f9fa;
+    padding: 10px;
+}
+
 .navbar-brand {
     font-weight: 700;
     color: var(--primary-color) !important;
+}
+
+.nav-item a {
+    color: var(--secondary-color);
 }
 
 .hero-section {

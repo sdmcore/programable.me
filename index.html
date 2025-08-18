@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- For sale section  -->
+    <div class="forSale text-center">
+        <h2 class="domain text-center">Domain For Sale </h2>
+        <h4 class="buynow">BUY NOW</h4>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <a class="domains afternic" href="https://www.afternic.com/domain/programable.me/" target="_blank" rel="noopener noreferrer"><img src="https://images.seeklogo.com/logo-png/44/1/afternic-logo-png_seeklogo-440453.png" width="80px" alt="Afternic"></a>
+            <a class="domains namecheap" href="https://www.namecheap.com/market/buynow/programable.me/" target="_blank" rel="noopener noreferrer"><img src="https://yt3.googleusercontent.com/ytc/AIdro_nYIUYmW5WegIWG4jfPmIBa9PNqXsAhM2cPn7MlGhH99Q=s900-c-k-c0x00ffffff-no-rj" width="80px" alt="Namecheap"></a>
+        </div>
+        
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
@@ -288,13 +298,13 @@
                         </div>
                     </form>
                     <p><i class="fas fa-envelope me-2"></i> info@programable.me</p>
-                    <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-phone me-2"></i> +0 (000) 000-0000</p>
                 </div>
             </div>
             <hr class="mt-5 mb-4" style="border-color: rgba(255, 255, 255, 0.1);">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 Programable.me. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Programable.me. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <a href="#" class="text-white-50 me-3">Privacy Policy</a>
@@ -309,94 +319,6 @@
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initial animations on page load
-            anime({
-                targets: '.hero-title',
-                translateY: [-50, 0],
-                opacity: [0, 1],
-                duration: 1000,
-                easing: 'easeOutExpo',
-                delay: 300
-            });
-            
-            anime({
-                targets: '.hero-subtitle',
-                translateY: [-30, 0],
-                opacity: [0, 1],
-                duration: 800,
-                easing: 'easeOutExpo',
-                delay: 600
-            });
-            
-            anime({
-                targets: '.hero-content .btn',
-                translateY: [30, 0],
-                opacity: [0, 1],
-                duration: 800,
-                easing: 'easeOutExpo',
-                delay: 900
-            });
-            
-            anime({
-                targets: '.hero-image',
-                translateX: [100, 0],
-                opacity: [0, 1],
-                duration: 1000,
-                easing: 'easeOutExpo',
-                delay: 300
-            });
-            
-            // Scroll animations
-            const hiddenElements = document.querySelectorAll('.hidden');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        anime({
-                            targets: entry.target,
-                            translateY: [50, 0],
-                            opacity: [0, 1],
-                            duration: 800,
-                            easing: 'easeOutExpo'
-                        });
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            hiddenElements.forEach((el) => observer.observe(el));
-            
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Navbar background change on scroll
-            window.addEventListener('scroll', function() {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('navbar-scrolled');
-                } else {
-                    navbar.classList.remove('navbar-scrolled');
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
