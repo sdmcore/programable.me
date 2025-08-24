@@ -12,9 +12,33 @@ body {
 }
 
 .forSale {
+position: relative;
     background-color: var(--dark-color);
     color: #f8f9fa;
     padding: 10px;
+    min-height: 40vh;
+}
+.forSale h2{
+    background-color: var(--dark-color);
+    color: #f8f9fa;
+    padding: 10px;
+    min-height: 30vh;
+    font-size: 8vw;
+    text-align: center;
+    background-color: #4d44db;
+}
+
+.forSale .markets {
+    position: absolute;
+    display: inline;
+    align-items: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.markets .domains {
+   border: 20px solid #2a2a72;
 }
 
 .navbar-brand {
